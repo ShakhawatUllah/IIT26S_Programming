@@ -9,16 +9,16 @@ choice = input("Your choice: ")
 if choice == "1":
     print("\nLength options: ")
     print("1 - Meters to kilometers")
-    print("2 - Kilometersto meters")
+    print("2 - Kilometers to meters")
     print("0 - Exit")
     Length_choice = input("Your choice: ")
     if Length_choice == "1":
-        meters = input("Insert meters: ")
-        kilometers = float(meters) / 1000
+        meters = float(input("Insert meters: "))
+        kilometers = meters / 1000
         print(f"{meters} meters is {kilometers} kilometers")
     elif Length_choice == "2":
-        kilometers = input("Insert kilometers: ")
-        meters = float(kilometers) * 1000
+        kilometers = float(input("Insert kilometers: "))
+        meters = kilometers * 1000
         print(f"{kilometers} kilometers is {meters} meters")
     elif Length_choice == "0":
         print("Exiting...")
